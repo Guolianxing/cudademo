@@ -114,7 +114,7 @@ int main() {
     }
     printf("before sort:\n");
     for (i = 0; i < NUM_ELEM; i++) {
-        printf("%d ", cpu_arr[i]);
+        printf("%u ", cpu_arr[i]);
     }
     printf("\n");
     cudaMalloc((void**)&gpu_arr, ARR_SIZE);
@@ -125,7 +125,7 @@ int main() {
     cudaFree(gpu_arr);
     printf("after sort:\n");
     for (i = 0; i < NUM_ELEM; i++) {
-        printf("%d ", cpu_arr[i]);
+        printf("%u ", cpu_arr[i]);
     }
     printf("\n");
     return 0;
